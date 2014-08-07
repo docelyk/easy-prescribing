@@ -1,0 +1,44 @@
+@media only screen and (min-width: 768px){
+
+	#menu{
+		display: none;
+	}
+
+	#index > .header-text > h1,
+	#preview > .header-text > h1,
+	#about > .header-text > h1{
+  		font-size: 5.8em;
+  	}
+
+  	#index > .header-text > h3,
+  	#preview > .header-text > h3,
+  	#about > .header-text > h3{
+  		font-size: 2em;
+  	}
+
+  	.imp{
+  		height: 400px;
+  		overflow: scroll;
+	}
+
+	#sr>a>img:hover,
+	#sr>a>img:focus{
+  		width: 270px;
+  		height: 327px;
+ 	}
+}
+
+
+
+@media only screen and (max-width: 768px){
+	#nav.js{
+		display: none;
+	}
+	#menu {
+			width:1.4em;
+			display: block;
+			background:#ddd;
+			font-size:1.35em;
+			text-align: center;
+	}
+}
