@@ -1,15 +1,26 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
 body{
   background-color: #F8F8F8;
-  z-index: 10;
+}
+
+
+.scroll-wrap{
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
-html, body{
-  height: 100%;
-  overflow: auto;
-  overflow-x: hidden;
-  width: 100%;
+.scroll-body{
+  max-width: 100%;
+  height: inherit;
 }
 
 h1, a, h4, h3, h5{
@@ -33,6 +44,7 @@ a{
  *
  */
 
+
 #nav{
   display: inline-block;
 }
@@ -43,7 +55,7 @@ a{
 
 #navigation{
   color: white;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -69,10 +81,6 @@ a{
 
 #logo{
   font-weight: bold;
-}
-
-html>body #navigation{
-  position: fixed;
 }
 
 .nav > li > a:hover,
@@ -134,7 +142,7 @@ html>body #navigation{
 #index > .header-text > h1,
 #preview > .header-text > h1,
 #about > .header-text > h1{
-  font-size: 2.4em;
+  font-size: 2.6em;
   text-shadow: 2px 2px 2px #000;
 }
 
@@ -148,12 +156,25 @@ html>body #navigation{
 }
 
 .header-text > h3{
-  font-size: .75em;
+  font-size: 1.25em;
   color: #000;
   /*text-shadow: 1px 1px 2px #000;*/
   letter-spacing: 2px;
 }
 
+.btn-primary{
+  background-color: #025494;
+  border-color: #000;
+}
+
+.btn-primary#contactRep{
+  background-color: #E54A00;
+  border-color: #000;
+}
+
+.header-text>button{
+  margin-top: 10px;
+}
 
 /*!
  *
@@ -161,9 +182,9 @@ html>body #navigation{
  *
  */
 
- #whowrap{
+/* #whowrap{
   display: none;
- }
+ }*/
 
  .wrapper>.container>h2{
   padding-top: 30px;
@@ -190,6 +211,7 @@ html>body #navigation{
    text-shadow: 1px 1px 1px black;
    text-decoration: none;
  }
+
 
 #who > .row{
    padding-bottom: 40px;
@@ -257,24 +279,12 @@ html>body #navigation{
 
 .contact-info{
   list-style: none;
-}
-
-.contact-info>li{
-  margin: 15px;
-}
-
-.contact-info>li>a{
-  margin: 5px;
   padding: 5px;
 }
 
-.contact-info>li>a:hover{
-  text-decoration: none;
-  background-color: #0271C5;
-  color: #F8F8F8;
-  border-radius: 5px;
+.aboutExplain{
+  padding: 20px 15px 20px 15px;
 }
-
 
 .phone:before{
   content: "";
@@ -295,6 +305,12 @@ html>body #navigation{
 }
 
 
+#sr * button{
+  clear: both;
+  display: block;
+  margin: 15px auto 40px;
+}
+
 
  /*!
  *
@@ -302,7 +318,7 @@ html>body #navigation{
  *
  */
 
- #pdf-list>p>a:before{
+ .pdf-list:before{
   content: "";
   background: url("../img/file_pdf.ico") no-repeat center center;
   width: 24px;
@@ -311,16 +327,16 @@ html>body #navigation{
   margin-right: 5px;
  }
 
-#pdf-list>p>a{
+.pdf-list{
   margin: 5px;
   padding: 5px;
 }
 
-#pdf-list{
-  margin: 15px;
+.pdf-list{
+  margin: 5px;
 }
 
-#pdf-list>p>a:hover{
+.pdf-list:hover{
   text-decoration: none;
   background-color: #0271C5;
   color: #F8F8F8;

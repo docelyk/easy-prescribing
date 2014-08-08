@@ -7,13 +7,13 @@
 	#index > .header-text > h1,
 	#preview > .header-text > h1,
 	#about > .header-text > h1{
-  		font-size: 5.8em;
+  		font-size: 6.0em;
   	}
 
   	#index > .header-text > h3,
   	#preview > .header-text > h3,
   	#about > .header-text > h3{
-  		font-size: 2em;
+  		font-size: 2.3em;
   	}
 
   	.imp{
@@ -26,7 +26,26 @@
   		width: 270px;
   		height: 327px;
  	}
+
+
+	.contact-info>li{
+	  margin: 5px;
+	}
+
+	.contact-info>li>a{
+	  margin: 5px;
+	  padding: 5px;
+	}
+
+ 	.contact-info>li>a:hover{
+	  text-decoration: none;
+	  background-color: #0271C5;
+	  color: #F8F8F8;
+	  border-radius: 5px;
+	}
 }
+
+
 
 
 
